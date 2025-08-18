@@ -20,8 +20,9 @@ Este é o backend de uma aplicação de lista de tarefas (To-do List), desenvolv
 ```bash
 src/
 ├── index.ts # Ponto de entrada do servidor
-├── routes/ # Definição das rotas da API
-├── controllers/ # Lógica de cada rota
+└── http/
+    ├── routes/
+    └── controllers/
 ├── services/ # Lógica de negócio
 ├── config/ # Configurações como Supabase client
 ├── middlewares/ # Middlewares personalizados
