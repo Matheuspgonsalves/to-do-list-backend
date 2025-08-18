@@ -17,7 +17,7 @@ Este é o backend de uma aplicação de lista de tarefas (To-do List), desenvolv
 ---
 
 ## 📁 Estrutura do projeto
-
+```bash
 src/
 ├── index.ts # Ponto de entrada do servidor
 ├── routes/ # Definição das rotas da API
@@ -26,7 +26,7 @@ src/
 ├── config/ # Configurações como Supabase client
 ├── middlewares/ # Middlewares personalizados
 └── models/ # Tipagens e interfaces
-
+```
 ## ⚙️ Como rodar o projeto
 
 1. **Clone o repositório:**
