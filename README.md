@@ -48,7 +48,7 @@ Exemplo:
 ```
 PORT=8001
 SUPABASE_URL=your_supabase_url
-SUPABASE_SERVICE_KEY=your_service_role_key
+SUPABASE_KEY=your_service_role_key
 ...
 ```
 
