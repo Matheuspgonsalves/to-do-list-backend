@@ -1,5 +1,5 @@
 import joi from "joi";
-import Task from "../interface/tasks.interface";
+import { Task } from "../interface/tasks.interface";
 
 export const taskSchema: joi.ObjectSchema<Task> = joi.object({
   task_name: joi.string().required(),
