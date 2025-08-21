@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { userRegister } from "../controllers/user/register.controllers";
-import { userLogin } from "../controllers/user/login.controllers";
+import { userRegister } from "../controllers/auth/register.controllers";
+import { userLogin } from "../controllers/auth/login.controllers";
 
 const users = Router();
 
