@@ -50,6 +50,7 @@ Exemplo:
 PORT=8001
 SUPABASE_URL=your_supabase_url
 SUPABASE_KEY=your_service_role_key
+JSON_WEB_TOKEN=your_token_key
 ...
 ```
 
