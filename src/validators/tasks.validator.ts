@@ -7,3 +7,11 @@ export const taskSchema: joi.ObjectSchema<Task> = joi.object({
   status: joi.string().default("pendente"),
   priority: joi.string().required(),
 }).unknown(false);
+
+export const taskUpdateSchema: joi.ObjectSchema<Task> = joi.object({
+  task_id: joi.string().required(),
+  task_name: joi.string().required(),
+  description: joi.string().default(""),
+  status: joi.string().default("pendente"),
+  priority: joi.string().required(),
+}).unknown(false);
