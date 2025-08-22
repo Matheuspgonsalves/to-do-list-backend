@@ -9,21 +9,19 @@ export const getTask = async (request: any, response: any) => {
     .select("*")
     .eq("user_id", user_id);
 
-
   const tasksData: any = tasksSnapshot.data;
 
-  const tasks: any[] = [];
+  const tasks: TaskResponse[] = [];
   
   if (tasksData.empty) {
     return response.status(200).send({message: "OK", tasks});
   }
 
   tasksData.forEach(
-    (doc: any) => {
+    (doc: TaskResponse) => {
       tasks.push({
-        task_id: doc.task_id,
         ...doc
-      })
+      });
     }
   );
   
