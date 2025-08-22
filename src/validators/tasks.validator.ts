@@ -15,3 +15,7 @@ export const taskUpdateSchema: joi.ObjectSchema<Task> = joi.object({
   status: joi.string().default("pendente"),
   priority: joi.string().required(),
 }).unknown(false);
+
+export const taskDeleteSchema: joi.ObjectSchema<any> = joi.object({
+  task_id: joi.string().required(),
+}).unknown(false);
